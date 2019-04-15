@@ -11,14 +11,14 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function AppRouter() {
   return (
-      <Router>
-        <div><Link exact to='/'>tologin</Link></div>
+    <Router>
+      <div><Link exact to='/'>tologin</Link></div>
       <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route  path="/login" component={Login}/>
-        <Redirect/>
+        <Route exact path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Redirect to="/" />
       </Switch>
     </Router>
-    
+
   )
 }
